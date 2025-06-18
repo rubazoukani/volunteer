@@ -1,0 +1,20 @@
+@include keyf("appear") {
+  from {
+    @include set-position(auto, 15px, -210px, auto);
+  }
+  to {
+    @include set-position(auto, 15px, 15px, auto);
+  }
+}
+
+@include keyf("popup") {
+  0% {
+    @include prefixer(transform, scale(0));
+  }
+  75% {
+    @include prefixer(transform, scale(1.2));
+  }
+  100% {
+    @include prefixer(transform, scale(1));
+  }
+}

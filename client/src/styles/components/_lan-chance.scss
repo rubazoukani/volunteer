@@ -1,0 +1,10 @@
+.lan-chance-card {
+  &:hover {
+    @include prefixer(transform, translateY(-5px))
+  }
+
+  .btn {
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+  }
+}

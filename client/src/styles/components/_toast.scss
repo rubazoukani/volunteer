@@ -1,0 +1,15 @@
+.my-toast {
+  width: 280px;
+  max-height: 200px;
+  border: 2px solid var(--c-main);
+  z-index: 1100;
+  @include animation(appear, .4s linear forwards);
+
+  .close-icon {
+    color: white;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.auth {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    background-color: var(--layout-dark);
+    position: absolute;
+    @include set-position(0, 0, 0, 0);
+    z-index: 1;
+  }
+
+  .content {
+    height: 520px;
+    box-shadow: none;
+    z-index: 2;
+
+    .greeting {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 500px;
+
+      @include breakpoints(xl) {
+        width: 800px;
+      }
+    }
+
+    form {
+      background-color: var(--c-white-transparent-04);
+      width: 450px;
+      min-width: 300px;
+      overflow-y: auto;
+
+      @include prefixer(border-radius, 15px);
+
+      @include breakpoints(lg) {
+        @include prefixer(border-radius, 0);
+      }
+    }
+  }
+}

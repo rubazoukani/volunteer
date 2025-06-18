@@ -1,0 +1,31 @@
+#sidebar {
+  width: 240px;
+  position: fixed;
+  @include set-position(0, auto, -2px, -240px);
+  z-index: 1080;
+
+  &.visible {
+    @include set-position(0, auto, -2px, 0);
+  }
+
+  @include breakpoints(lg) {
+    position: static;
+  }
+
+  .content {
+    width: 240px;
+    position: static;
+
+    @include breakpoints(lg) {
+      position: fixed;
+      @include set-position(0, auto, auto, auto);
+    }
+  }
+
+  .toggle-button {
+    width: 30px;
+    height: 30px;
+    top: 78px;
+    right: -30px;
+  }
+}

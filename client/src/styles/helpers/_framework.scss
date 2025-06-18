@@ -1,0 +1,72 @@
+.w-fit {
+  width: fit-content !important;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-y {
+  display: flex;
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.f-important {
+  font-family: var(--f-important);
+}
+
+.fs-sm {
+  font-size: 14px
+}
+
+.transition-03 {
+  @include prefixer(transition, var(--t-03) ease-in-out);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--c-link);
+  @include prefixer(transition, var(--t-03) ease-in-out);
+}
+
+.link:hover {
+  color: var(--c-link-hover);
+}
+
+.text-main.hover:hover {
+  color: var(--c-main-hover);
+}
+
+.bg-main {
+  background-color: var(--c-main);
+}
+
+.bg-second-hover:hover {
+  background-color: var(--c-second);
+}
+
+.bg-third {
+  background-color: var(--c-third);
+}
+
+.text-main {
+  color: var(--c-main);
+}
+
+.text-main-hover:hover {
+  color: var(--c-main-hover) !important;
+}

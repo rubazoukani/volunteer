@@ -1,0 +1,15 @@
+.contact-section {
+  .contact-box {
+    background-color: white;
+  }
+
+  .contact-image {
+    background-color: var(--layout-dark);
+  }
+
+  .contact-details {
+    svg {
+      vertical-align: middle;
+    }
+  }
+}

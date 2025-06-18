@@ -1,0 +1,32 @@
+$xxs: "(max-width: 400px)";
+$xs: "(max-width: 575.9px)";
+$sm: "(min-width: 576px)";
+$md: "(min-width: 768px)";
+$lg: "(min-width: 992px)";
+$xl: "(min-width: 1200px)";
+$xxl: "(min-width: 1400px)";
+
+$lg-max: "(max-width: 992px)";
+
+:root {
+  --t-03: 0.3s;
+
+  --f-important: "Libre Baskerville", serif;
+
+  --c-main: #6600FF;
+  --c-main-hover: #6600ffd0;
+  --c-second: #3e347f;
+
+  --c-third: #343a3f;
+
+  --shadow-dark: 0px 3px 15px rgba(0, 0, 0, 0.3);
+  --layout-dark: rgba(0, 0, 0, 0.3);
+  --layout-main: #6600ff2a;
+  --layout-light: rgba(255, 255, 255, 0.65);
+
+  --c-link: #1a1aad;
+  --c-link-hover: #1a1aad8c;
+
+
+  --c-disabled: #756363;
+}

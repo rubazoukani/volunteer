@@ -1,0 +1,9 @@
+#lan-about {
+  .content {
+    width: 95%;
+
+    @include breakpoints(md) {
+      width: 80%;
+    }
+  }
+}
